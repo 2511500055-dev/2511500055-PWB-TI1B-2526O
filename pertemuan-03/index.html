@@ -53,9 +53,78 @@
                 margin-bottom: 2px;
             }
         }
+
+            #contact {
+            background-color: #f4f8fb;
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 700px;
+            margin: 40px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+
+        #contact h2 {
+            color: #005580;
+            border-bottom: 2px dashed #005580;
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+         }
+
+        #contact label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #333333;
+         }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+         }
+
+        #contact input:focus,
+        #contact textarea:focus {
+            border-color: #005580;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 85, 128, 0.3);
+         }
+
+        #contact button {
+            padding: 10px 18px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #005580;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+         }
+
+        #contact button:hover {
+            background-color: #003d59;
+         }
+
+        @media (max-width: 600px) {
+          #contact {
+            padding: 16px;
+        }
+
+         #contact h2 {
+            font-size: 20px;
+        }
+     }
     </style>
 </head>
-
 <body>
     <header>
         <h1>Ini Header</h1>
@@ -108,12 +177,11 @@
 
               <button type="submit">Kirim</button>
               <button type="reset">Batal</button>
-        </form>
+           ,</form>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Aditya Ihsani Wijaya [2511500055]</p>
     </footer>
 </body>
-
 </html>

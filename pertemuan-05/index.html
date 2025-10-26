@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Halaman</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ini Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Selamat Datang</h2>
+            <p>Ini contoh Paragraf HTML</p>
+        </section>
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <style>
+                #about p {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: baseline;
+                    margin: 0;
+                    padding: 6px 0;
+                    border-bottom: 1px solid #e6e6e6
+                }
+
+                #about strong {
+                    min-width: 180px;
+                    color: #003366;
+                    font-weight: 600;
+                    text-align: right;
+                    padding-right: 16px;
+                    flex-shrink: 0;
+                }
+
+                @media (max-width: 600px) {
+                    #about p {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    #about strong {
+                        text-align: left;
+                        padding-right: 0;
+                        margin-bottom: 2px;
+                    }
+                }
+            </style>
+
+                <main>
+
+                    <section id="about">
+                        <p><strong>NIM:</strong> 2511500055</p>
+                        <p><strong>Nama:</strong> Aditya Ihsani Wijaya. &#128526;</p>
+                        <p><strong>Tempat Lahir:</strong> Palembang</p>
+                        <p><strong>Tanggal Lahir:</strong> 07 Mei 2007</p>
+                        <p><strong>Hobi:</strong> Bermain Game dan Healing &#128526;</p>
+                        <p><strong>pasangan:</strong> Saya Memiliki Pasangan bernama Citra Suci Lestari, dia adalah
+                            Pasangaan
+                            terbaik yang saya temuin sejak saya SMA kelas 12 pada tanggal 7 April 2025, Dia bukan cuma
+                            pacar yang
+                            baik, tapi juga shabat dan rumah buat saya dia orang nyaa baik cantik tulus dan lucu, Pokok
+                            nya
+                            terimakasih atas semua hal baik yang pernah kamu lakukan udaa nyasar masuk ke hidupku dan
+                            bikin semuanya
+                            jadi amazing❤️‍🔥 &hearts;.</p>
+                        <p><strong>Nama Orang Tua:</strong> Saya memiliki kedua orang tua. Ayah saya bernama Wewen
+                            Susanto dan Ibu
+                            saya bernama Veby Alphasierra.</p>
+                        <p><strong>Nama Adik:</strong> nama adik laki-laki bernama Gilang Webi Geovany.</p>
+                        <p><strong>Teman Terbaik:</strong> Teman Terbaik saya yang bernama Yan saputra, Sheby, Dara,
+                            Fadillah Dwi
+                            Reztari, mereka teman baik yang saya temuin pada tanggal 2 Maret 2025 merekaa baik dan
+                            mereka yang
+                            selalu memebrikan saya motivasi agar saya selalu bersemangat dan mereka selalu mensupport
+                            saya, dan saya
+                            mengucapkan TerimaKasih karna udaa jadi teman terbaik saya🤗🙌.</p>
+                    </section>
+                    <section id="contact">
+                        <h2>Kontak Kami</h2>
+
+                        <form action="" method="GET">
+                            <label for="txtNama"><span>Nama:</span>
+                                <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required
+                                    autocomplete="name">
+                            </label>
+                            <label for="txtEmail"><span>Email:</span>
+                                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required
+                                    autocomplete="email">
+                            </label>
+                            <label for="txtPesan"><span>Pesan Anda</span>
+                                <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
+                                    required></textarea>
+                            </label>
+                            <button type="submit">Kirim</button>
+                            <button type="reset">Batal</button>
+                        </form>
+                    </section>
+                </main>
+                <footer>
+                    <p>&copy; 2025 Aditya Ihsani Wijaya [2511500055]</p>
+                </footer>
+            </body>
+
+</html>

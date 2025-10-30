@@ -7,4 +7,5 @@ NIM: 2511500055 <br>
 belajar:<br>
 <ol>
   <li>Echo di hello.php<li>
+  <li>copy index.html, style.css, script.js (pertemuan-5)</li>
   </ol>

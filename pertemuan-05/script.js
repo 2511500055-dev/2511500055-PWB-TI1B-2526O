@@ -14,7 +14,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     const email = document.getElementById("txtEmail");
     const pesan = document.getElementById("txtPesan");
 
-    document.querySelectorAll(".error-msg").forEach(el => el.remove());
+    document, this.querySelector(".error-msg").forEach(el => el.remove());
     [nama, email, pesan].forEach(el => el.style.border = "");
 
     let isValid = true;
@@ -22,6 +22,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
 if (nama.value.trim().length < 3) {
     showError(nama, "Nama minimal 3 huruf dan tidak boleh kosong.");
     isValid = false;
+
 } else if (!/^[A-Za-z\s]+$/.test(nama.value)) {
     showError(nama, "Nama hanya boleh berisi huruf dan spasi.");
     isValid = false;
@@ -56,7 +57,6 @@ function showError(inputElement, message) {
     const small = document.createElement("small");
     small.className = "error-msg";
     small.textContent = message;
-
     small.style.color = "red";
     small.style.fontSize = "14px";
     small.style.display = "block";

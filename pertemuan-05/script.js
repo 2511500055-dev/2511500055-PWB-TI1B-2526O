@@ -184,9 +184,11 @@ window.addEventListener("resize", () => {
         counter.style.width = 'auto';
     }
    }
+   setupCharCountLayout();
 
+   window.addEventListener('resize', applyResponsiveLayout);
+});
     document.getElementById("txtPesan").addEventListener("input", function () {
         const panjang = this.value.length;
         document.getElementById("charCount").textContent = panjang + "/200 karakter";
     });
-});

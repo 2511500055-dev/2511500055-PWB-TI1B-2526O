@@ -27,12 +27,13 @@
             <P>ini contoh pragraf HTML.</P>
         </section>
         <section id="about">
-                        <p><strong>NIM:</strong> 2511500055</p>
-                        <p><strong>Nama:</strong> Aditya Ihsani Wijaya. &#128526;</p>
-                        <p><strong>Tempat Lahir:</strong> Palembang</p>
-                        <p><strong>Tanggal Lahir:</strong> 07 Mei 2007</p>
-                        <p><strong>Hobi:</strong> Bermain Game dan Healing &#128526;</p>
-                        <p><strong>pasangan:</strong> Saya Memiliki Pasangan bernama Citra Suci Lestari, dia adalah
+            <?php
+        $NIM = "2511500055";
+        $NAMA = "Aditya Ihsani Wijaya";
+        $TEMPAT_LAHIR = "Palembang";
+        $TANGGAL_LAHIR = "07-Mei-2007";
+        $HOBI = "Bermain game dan Healing";
+        $PASANGAN = "Saya Memiliki Pasangan bernama Citra Suci Lestari, dia adalah
                             Pasangaan
                             terbaik yang saya temuin sejak saya SMA kelas 12 pada tanggal 7 April 2025, Dia bukan cuma
                             pacar yang
@@ -40,21 +41,132 @@
                             nya
                             terimakasih atas semua hal baik yang pernah kamu lakukan udaa nyasar masuk ke hidupku dan
                             bikin semuanya
-                            jadi amazing❤️‍🔥 &hearts;.</p>
-                        <p><strong>Nama Orang Tua:</strong> Saya memiliki kedua orang tua. Ayah saya bernama Wewen
+                            jadi amazing❤️‍🔥 &hearts;";
+        $NAMA_ORANG_TUA = "Saya memiliki kedua orang tua. Ayah saya bernama Wewen
                             Susanto dan Ibu
-                            saya bernama Veby Alphasierra.</p>
-                        <p><strong>Nama Adik:</strong> nama adik laki-laki bernama Gilang Webi Geovany.</p>
-                        <p><strong>Teman Terbaik:</strong> Teman Terbaik saya yang bernama Yan saputra, Sheby, Dara,
+                            saya bernama Veby Alphasierra.";
+        $Nama_Adik = "nama adik laki-laki bernama Gilang Webi Geovany.";
+        $Teman_Terbaik = "Teman Terbaik saya yang bernama Yan saputra, Sheby, Dara,
                             Fadillah Dwi
                             Reztari, mereka teman baik yang saya temuin pada tanggal 2 Maret 2025 merekaa baik dan
                             mereka yang
                             selalu memebrikan saya motivasi agar saya selalu bersemangat dan mereka selalu mensupport
                             saya, dan saya
-                            mengucapkan TerimaKasih karna udaa jadi teman terbaik saya🤗🙌.</p>
+                            mengucapkan TerimaKasih karna udaa jadi teman terbaik saya🤗🙌.";
+        ?>
+                        <p><strong>NIM:</strong><?php echo 2511500055 ?></p>
+                        <p><strong>Nama:</strong> Aditya Ihsani Wijaya. &#128526;</p>
+                        <p><strong>Tempat Lahir:</strong><?php echo Palembang ?></p>
+                        <p><strong>Tanggal Lahir:</strong><?php echo 07 Mei 2007 ?></p>
+                        <p><strong>Hobi:</strong><?php echo Bermain Game dan Healing &#128526; ?></p>
+                        <p><strong>pasangan:</strong><?php echo Saya Memiliki Pasangan bernama Citra Suci Lestari, dia adalah
+                            Pasangaan
+                            terbaik yang saya temuin sejak saya SMA kelas 12 pada tanggal 7 April 2025, Dia bukan cuma
+                            pacar yang
+                            baik, tapi juga shabat dan rumah buat saya dia orang nyaa baik cantik tulus dan lucu, Pokok
+                            nya
+                            terimakasih atas semua hal baik yang pernah kamu lakukan udaa nyasar masuk ke hidupku dan
+                            bikin semuanya
+                            jadi amazing❤️‍🔥 &hearts;.?></p>
+                        <p><strong>Nama Orang Tua:</strong><?php echo Saya memiliki kedua orang tua. Ayah saya bernama Wewen
+                            Susanto dan Ibu
+                            saya bernama Veby Alphasierra.?></p>
+                        <p><strong>Nama Adik:</strong><?php echo nama adik laki-laki bernama Gilang Webi Geovany.?></p>
+                        <p><strong>Teman Terbaik:</strong><?php echo Teman Terbaik saya yang bernama Yan saputra, Sheby, Dara,
+                            Fadillah Dwi
+                            Reztari, mereka teman baik yang saya temuin pada tanggal 2 Maret 2025 merekaa baik dan
+                            mereka yang
+                            selalu memebrikan saya motivasi agar saya selalu bersemangat dan mereka selalu mensupport
+                            saya, dan saya
+                            mengucapkan TerimaKasih karna udaa jadi teman terbaik saya🤗🙌.?></p>
 
     </section>
-    <section id="contact">
+    <section id="ipk">
+        <h2>Nilai saya</h2>
+        <?php
+        $namaMatkul1 = "Algoritma dan Struktur Data";
+    $sksMatkul1 = 3;
+    $nilaiHadir1 = 90;
+    $nilaiTugas1 = 70;
+    $nilaiUTS1 = 78;
+    $nilaiUAS1 = 72;
+
+    $namaMatkul2 = "Agama";
+    $sksMatkul2 = 2;
+    $nilaiHadir2 = 76;
+    $nilaiTugas2 = 60;
+    $nilaiUTS2 = 75;
+    $nilaiUAS2 = 80;
+
+    $namaMatkul3 = "Matematika Diskrit";
+    $sksMatkul3 = 3;
+    $nilaiHadir3 = 86;
+    $nilaiTugas3 = 75;
+    $nilaiUTS3 = 80;
+    $nilaiUAS3 = 76;
+
+    $namaMatkul4 = "Sistem Operasi";
+    $sksMatkul4 = 3;
+    $nilaiHadir4 = 90;
+    $nilaiTugas4 = 87;
+    $nilaiUTS4 = 85;
+    $nilaiUAS4 = 88;
+
+    $namaMatkul5 = "Pemrograman Web Dasar";
+    $sksMatkul5 = 3;
+    $nilaiHadir5 = 70;
+    $nilaiTugas5 = 80;
+    $nilaiUTS5 = 96;
+    $nilaiUAS5 = 97;
+
+    function hitungGrade($nilaiAkhir, $hadir) {
+      if ($hadir < 70) return ['E', 0];
+      if ($nilaiAkhir >= 90) return ['A', 4];
+      if ($nilaiAkhir >= 80) return ['A-', 3.7];
+      if ($nilaiAkhir >= 75) return ['B+', 3.3];
+      if ($nilaiAkhir >= 72) return ['B', 3];
+      if ($nilaiAkhir >= 69) return ['B-', 2.7];
+      if ($nilaiAkhir >= 60) return ['C+', 2.3];
+      if ($nilaiAkhir >= 59) return ['C', 2];
+      if ($nilaiAkhir >= 55) return ['C-', 1.7];
+      if ($nilaiAkhir >= 30) return ['D', 1];
+      return ['E', 0];
+    }
+
+    $totalBobot = 0;
+    $totalSKS = 0;
+
+    for ($i = 1; $i <= 5; $i++) {
+      $nilaiAkhir = (0.1 * ${"nilaiHadir$i"}) + (0.2 * ${"nilaiTugas$i"}) + (0.3 * ${"nilaiUTS$i"}) + (0.4 * ${"nilaiUAS$i"});
+      list($grade, $mutu) = hitungGrade($nilaiAkhir, ${"nilaiHadir$i"});
+      $bobot = $mutu * ${"sksMatkul$i"};
+      $status = ($grade == "D" || $grade == "E") ? "Gagal" : "Lulus";
+
+      echo "<p><strong>Nama Matakuliah ke-$i:</strong> ${"namaMatkul$i"}</p>";
+      echo "<p><strong>SKS:</strong> ${"sksMatkul$i"}</p>";
+      echo "<p><strong>Kehadiran:</strong> ${"nilaiHadir$i"}</p>";
+      echo "<p><strong>Tugas:</strong> ${"nilaiTugas$i"}</p>";
+      echo "<p><strong>UTS:</strong> ${"nilaiUTS$i"}</p>";
+      echo "<p><strong>UAS:</strong> ${"nilaiUAS$i"}</p>";
+      echo "<p><strong>Nilai Akhir:</strong> " . round($nilaiAkhir, 2) . "</p>";
+      echo "<p><strong>Grade:</strong> $grade</p>";
+      echo "<p><strong>Angka Mutu:</strong> $mutu</p>";
+      echo "<p><strong>Bobot:</strong> $bobot</p>";
+      echo "<p><strong>Status:</strong> $status</p>";
+      echo "<hr>";
+
+      $totalBobot += $bobot;
+      $totalSKS += ${"sksMatkul$i"};
+    }
+
+    $IPK = $totalBobot / $totalSKS;
+
+    echo "<p><strong>Total Bobot:</strong> $totalBobot</p>";
+    echo "<p><strong>Total SKS:</strong> $totalSKS</p>";
+    echo "<p><strong>IPK:</strong> " . round($IPK, 2) . "</p>";
+    ?>
+    </section>
+    <section id="contact>
             <h2>kontak kami</h2>
       <form action="" method="GET">
         <div class="form-row">

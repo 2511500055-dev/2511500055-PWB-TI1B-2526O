@@ -1,11 +1,12 @@
-# pertemuan-06
+## pertemuan-06
 
-Hari ini, kamis 30 Oktober 2025,
-saya Aditya Ihsani Wijaya <br>
-NIM: 2511500055 <br>
+Deskripsi pertemuan ini.
+hari ini, kamis 30 oktober 2025,
+NIM : 2511500055<br>
+Namaa: Aditya Ihsani Wijaya<br><br>
 <br>
 belajar:<br>
 <ol>
-  <li>Echo di hello.php<li>
-  <li>copy index.html, style.css, script.js (pertemuan-5)</li>
-  </ol>
+ <li>echo di hello.php</li>
+ <li>copy index.html, style.css, script.js (pertemuan-05)</li>
+ </ol>

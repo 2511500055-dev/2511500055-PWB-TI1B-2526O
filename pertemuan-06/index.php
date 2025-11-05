@@ -54,31 +54,15 @@
                             saya, dan saya
                             mengucapkan TerimaKasih karna udaa jadi teman terbaik saya🤗🙌.";
         ?>
-                        <p><strong>NIM:</strong><?php echo 2511500055 ?></p>
-                        <p><strong>Nama:</strong> Aditya Ihsani Wijaya. &#128526;</p>
-                        <p><strong>Tempat Lahir:</strong><?php echo Palembang ?></p>
-                        <p><strong>Tanggal Lahir:</strong><?php echo 07 Mei 2007 ?></p>
-                        <p><strong>Hobi:</strong><?php echo Bermain Game dan Healing &#128526; ?></p>
-                        <p><strong>pasangan:</strong><?php echo Saya Memiliki Pasangan bernama Citra Suci Lestari, dia adalah
-                            Pasangaan
-                            terbaik yang saya temuin sejak saya SMA kelas 12 pada tanggal 7 April 2025, Dia bukan cuma
-                            pacar yang
-                            baik, tapi juga shabat dan rumah buat saya dia orang nyaa baik cantik tulus dan lucu, Pokok
-                            nya
-                            terimakasih atas semua hal baik yang pernah kamu lakukan udaa nyasar masuk ke hidupku dan
-                            bikin semuanya
-                            jadi amazing❤️‍🔥 &hearts;.?></p>
-                        <p><strong>Nama Orang Tua:</strong><?php echo Saya memiliki kedua orang tua. Ayah saya bernama Wewen
-                            Susanto dan Ibu
-                            saya bernama Veby Alphasierra.?></p>
-                        <p><strong>Nama Adik:</strong><?php echo nama adik laki-laki bernama Gilang Webi Geovany.?></p>
-                        <p><strong>Teman Terbaik:</strong><?php echo Teman Terbaik saya yang bernama Yan saputra, Sheby, Dara,
-                            Fadillah Dwi
-                            Reztari, mereka teman baik yang saya temuin pada tanggal 2 Maret 2025 merekaa baik dan
-                            mereka yang
-                            selalu memebrikan saya motivasi agar saya selalu bersemangat dan mereka selalu mensupport
-                            saya, dan saya
-                            mengucapkan TerimaKasih karna udaa jadi teman terbaik saya🤗🙌.?></p>
+                        <p><strong>NIM:</strong><?php echo $NIM; ?></p>
+                        <p><strong>Nama:</strong><?php echo $NAMA; ?> &#128526;</p>
+                        <p><strong>Tempat Lahir:</strong><?php echo $TEMPAT_LAHIR; ?></p>
+                        <p><strong>Tanggal Lahir:</strong><?php echo $TANGGAL_LAHIR; ?></p>
+                        <p><strong>Hobi:</strong><?php echo $HOBI; ?> &#128526;</p>
+                        <p><strong>pasangan:</strong><?php echo $PASANGAN; ?> ❤️‍🔥 &hearts;</p>
+                        <p><strong>Nama Orang Tua:</strong><?php echo $NAMA_ORANG_TUA; ?></p>
+                        <p><strong>Nama Adik:</strong><?php echo $Nama_Adik; ?></p>
+                        <p><strong>Teman Terbaik:</strong><?php echo $Teman_Terbaik;?> 🤗🙌</p>
 
     </section>
     <section id="ipk">

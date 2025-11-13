@@ -73,6 +73,7 @@ header li a:active {
 
 #home h2,
 #about h2,
+#datamahasiswa,
 #contact h2 {
   color: #003366;
   border-bottom: 2px solid #003366;
@@ -86,6 +87,7 @@ header li a:active {
 }
 
 #about p,
+#datamahasiswa label,
 #contact label {
   display: flex;
   justify-content: flex-start;
@@ -96,6 +98,7 @@ header li a:active {
 }
 
 #about strong,
+#datamahasiswa Label>span,
 #contact label>span {
   min-width: 180px;
   color: #003366;
@@ -106,6 +109,8 @@ header li a:active {
 }
 
 #contact input,
+#datamahasiswa input,
+#datamahasiswa textarea,
 #contact textarea {
   flex: 1;
   border: 1px solid #ccc;
@@ -117,6 +122,7 @@ header li a:active {
   box-sizing: border-box;
 }
 
+#datamahasiswa button,
 #contact button {
   margin-top: 10px;
   display: inline-block;
@@ -129,24 +135,28 @@ header li a:active {
   margin-right: 8px;
 }
 
+#datamahasiswa button[type="submit"],
 #contact button[type="submit"] {
   background-color: #003366;
   color: #fff;
   font-weight: 600;
 }
 
+#datamahasiswa button[type="reset"],
 #contact button[type="reset"] {
   background-color: #b4b4b4;
   color: #272727;
   font-weight: 500;
 }
 
+#datamahasiswa button[type="submit"]:hover,
 #contact button[type="submit"]:hover {
   background-color: #0379ee;
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+#datamahasiswa button[type="reset"]:hover,
 #contact button[type="reset"]:hover {
   background-color: #cccccc;
   transform: translateY(-1px);

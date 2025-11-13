@@ -1,5 +1,16 @@
 <?php
 session_start();
+$nim_ses = isset($_SESSION["nim"]) ? $_SESSION["nim"] : "";
+$nama_ses = isset($_SESSION["nama"]) ? $_SESSION["nama"] : "";
+$tempat_ses = isset($_SESSION["tempatLahir"]) ? $_SESSION["tempatLahir"] : "";
+$tanggal_ses = isset($_SESSION["tanggalLahir"]) ? $_SESSION["tanggalLahir"] : "";
+$hobi_ses = isset($_SESSION["hobi"]) ? $_SESSION["hobi"] : "";
+$pasangan_ses = isset($_SESSION["pasangan"]) ? $_SESSION["pasangan"] : "";
+$pekerjaan_ses = isset($_SESSION["pekerjaan"]) ? $_SESSION["pekerjaan"] : "";
+$ortu_ses = isset($_SESSION["ortu"]) ? $_SESSION["ortu"] : "";
+$kakak_ses = isset($_SESSION["kakak"]) ? $_SESSION["kakak"] : "";
+$adik_ses = isset($_SESSION["adik"]) ? $_SESSION["adik"] : "";
+
 
 $sesnama = "";
 if (isset($_SESSION["sesnama"])):
@@ -51,6 +62,55 @@ endif;
       ?>
       <p>Ini contoh paragraf HTML.</p>
     </section>
+
+    <section id="datamahasiswa">
+      <h2>Entry Data Mahasiswa</h2>
+  <form action="proses_mahasiswa.php" method="POST" id="formMahasiswa">
+
+  <label for="nim"><span>NIM:</span>
+    <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+  </label>
+
+  <label for="nama"><span>Nama Lengkap:</span>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required>
+  </label>
+
+  <label for="tempatLahir"><span>Tempat Lahir:</span>
+    <input type="text" id="tempatLahir" name="tempatLahir" placeholder="Masukkan Tempat Lahir" required>
+  </label>
+
+  <label for="tanggalLahir"><span>Tanggal Lahir:</span>
+    <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+  </label>
+
+  <label for="hobi"><span>Hobi:</span>
+    <input type="text" id="hobi" name="hobi" placeholder="Contoh: Membaca, Coding, Musik">
+  </label>
+
+  <label for="pasangan"><span>Pasangan:</span>
+    <input type="text" id="pasangan" name="pasangan" placeholder="Masukkan nama pasangan (jika ada)">
+  </label>
+
+  <label for="pekerjaan"><span>Pekerjaan:</span>
+    <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Masukkan Pekerjaan">
+  </label>
+
+  <label for="ortu"><span>Nama Orang Tua:</span>
+    <input type="text" id="ortu" name="ortu" placeholder="Masukkan Nama Orang Tua">
+  </label>
+
+  <label for="kakak"><span>Nama Kakak:</span>
+    <input type="text" id="kakak" name="kakak" placeholder="Masukkan Nama Kakak">
+  </label>
+
+  <label for="adik"><span>Nama Adik:</span>
+    <input type="text" id="adik" name="adik" placeholder="Masukkan Nama Adik">
+  </label>
+
+  <button type="submit">Kirim</button>
+  <button type="reset">Batal</button>
+</form>
+</section>
 
     <section id="about">
       <?php

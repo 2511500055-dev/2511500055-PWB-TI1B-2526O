@@ -16,55 +16,7 @@ if (isset($_SESSION["sespesan"])):
   $sespesan = $_SESSION["sespesan"];
 endif;
 
-$txtNim = "";
-if (isset($_SESSION["txtNim"])):
-  $txtNim = $_SESSION["txtNim"];
-endif;
 
-$txtNmLengkap = "";
-if (isset($_SESSION["txtNmLengkap"])):
-  $txtNmLengkap = $_SESSION["txtNmLengkap"];
-endif;
-
-$txtT4Lhr = "";
-if (isset($_SESSION["txtT4Lhr"])):
-  $txtT4Lhr = $_SESSION["txtT4Lhr"];
-endif;
-
-$txtTglLhr = "";
-if (isset($_SESSION["txtTglLhr"])):
-  $txtTglLhr = $_SESSION["txtTglLhr"];
-endif;
-
-$txtHobi = "";
-if (isset($_SESSION["txtHobi"])):
-  $txtHobi = $_SESSION["txtHobi"];
-endif;
-
-$txtPasangan = "";
-if (isset($_SESSION["txtPasangan"])):
-  $txtPasangan = $_SESSION["txtPasangan"];
-endif;
-
-$txtKerja = "";
-if (isset($_SESSION["txtKerja"])):
-  $txtKerja = $_SESSION["txtKerja"];
-endif;
-
-$txtNmOrtu = "";
-if (isset($_SESSION["txtNmOrtu"])):
-  $txtNmOrtu = $_SESSION["txtNmOrtu"];
-endif;
-
-$txtNmKakak = "";
-if (isset($_SESSION["txtNmKakak"])):
-  $txtNmKakak = $_SESSION["txtNmKakak"];
-endif;
-
-$txtNmAdik = "";
-if (isset($_SESSION["txtNmAdik"])):
-  $txtNmAdik = $_SESSION["txtNmAdik"];
-endif;
 ?>
 
 <!DOCTYPE html>
@@ -154,6 +106,14 @@ endif;
 
     <section id="about">
       <h2>Tentang Saya</h2>
+      <?php foreach ($fieldConfig as $kunci => $metadata): ?>
+    <p>
+          <strong><?= $metadata["label"] ?></strong>
+          <?= htmlspecialchars($biodata[$kunci] ?? "") ?>
+          <?= $metadata["suffix"] ?>
+        </p>
+      <?php endforeach; ?>
+
       <p><strong>NIM:</strong> <?= $txtNim ?></p>
       <p><strong>Nama Lengkap:</strong> <?= $txtNmLengkap ?> &#128526;</p>
       <p><strong>Tempat Lahir:</strong> <?= $txtT4Lhr ?></p>

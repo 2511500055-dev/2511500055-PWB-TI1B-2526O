@@ -12,4 +12,6 @@
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
   <li>memotif kode baris 10-19<li>
+  <li>menambahkan kode di bawah h2 tentang say<li>
+  <li>membuat file baru fungsi.php dan menambah kan kode di dalam file kose tersebut<li>
 </ol>

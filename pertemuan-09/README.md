@@ -14,4 +14,7 @@
   <li>memotif kode baris 10-19<li>
   <li>menambahkan kode di bawah h2 tentang say<li>
   <li>membuat file baru fungsi.php dan menambah kan kode di dalam file kose tersebut<li>
+  <li>menambah kode agar menghasilkan tangal bulan dan tahun<li>
+  <li>menambahkan kode untuk merender hasil atau output biodata<li>
+  <li> mengganti kode di file index.php untuk menampilkan biodata<li
 </ol>

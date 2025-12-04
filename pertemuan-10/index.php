@@ -85,7 +85,6 @@ require_once __DIR__ . '/fungsi.php';
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
-
     </section>
 
     <?php
@@ -98,7 +97,7 @@ require_once __DIR__ . '/fungsi.php';
       "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
       "hobi" => ["label" => "Hobi:", "suffix" => " &#127926;"],
       "pasangan" => ["label" => "Pasangan:", "suffix" => " &hearts;"],
-      "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => "&copy; 2025"],
+      "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => " &copy; 2025"],
       "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
       "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
       "adik" => ["label" => "Nama Adik:", "suffix" => ""],
@@ -132,19 +131,19 @@ require_once __DIR__ . '/fungsi.php';
       </form>
 
       <?php
-      $KontakKami = $_SESSION["KontakKami"] ?? [];
+      $contact = $_SESSION["contact"] ?? [];
 
-      $fieldKontak = [
-        "nama" => ["label" => "Nama:", "suffix" => " &#128526;"],
-        "email" => ["label" => "Email:", "suffix" => " &#128526;"],
-        "pesan" => ["label" => "Pesan:", "suffix" => " &#128526;"],
+      $fieldContact = [
+        "nama" => ["label" => "Nama:", "suffix" => ""],
+        "email" => ["label" => "Email:", "suffix" => ""],
+        "pesan" => ["label" => "Pesan Anda:", "suffix" => ""]
       ];
       ?>
 
       <br>
       <hr>
       <h2>Yang menghubungi kami</h2>
-      <?= tampilkanBiodata($fieldKontak, $KontakKami) ?>
+      <?= tampilkanBiodata($fieldContact, $contact) ?>
     </section>
   </main>
 

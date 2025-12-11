@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $arrKontakkami = [
     "nama" => $_POST["txtNama"] ?? "",
     "email" => $_POST["txtEmail"] ?? "",
@@ -20,5 +21,6 @@ $arrBiodata = [
     "adik"     => $_POST["txtNmAdik"] ?? ""
 ];
 $_SESSION["biodata"] = $arrBiodata;
+
 header("location: index.php#about");
 ?>

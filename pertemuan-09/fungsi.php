@@ -8,10 +8,12 @@ function tidakkosong($str)
 {
     return strlen(trim($str)) > 0;
 }
+
 function formatTanggal($tgl)
 {
-return date("d M Y", strtotime($tgl));
+    return date("d M Y", strtotime($tgl));
 }
+
 function tampilkanBiodata($conf, $arr)
 {
     $html = "";
@@ -24,4 +26,3 @@ function tampilkanBiodata($conf, $arr)
     }
     return $html;
 }
-?>

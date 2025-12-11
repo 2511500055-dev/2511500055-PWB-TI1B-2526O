@@ -65,6 +65,7 @@ endif;
 
     <section id="datamahasiswa">
       <h2>Entry Data Mahasiswa</h2>
+      
   <form action="proses_mahasiswa.php" method="POST" id="formMahasiswa">
 
   <label for="nim"><span>NIM:</span>

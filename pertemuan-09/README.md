@@ -17,4 +17,5 @@
   <li>menambah kode agar menghasilkan tangal bulan dan tahun<li>
   <li>menambahkan kode untuk merender hasil atau output biodata<li>
   <li> mengganti kode di file index.php untuk menampilkan biodata<li
+  <li><li>
 </ol>

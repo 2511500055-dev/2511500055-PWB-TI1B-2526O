@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 16, 2025 at 02:54 PM
+-- Generation Time: Dec 16, 2025 at 03:27 PM
 -- Server version: 5.7.33
 -- PHP Version: 7.4.19
 
@@ -32,7 +32,6 @@ CREATE TABLE `tbl_tamu` (
   `cnama` varchar(100) DEFAULT NULL,
   `cemail` varchar(100) DEFAULT NULL,
   `cpesan` text,
-  `alamat` text NOT NULL,
   `dcreated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -40,15 +39,21 @@ CREATE TABLE `tbl_tamu` (
 -- Dumping data for table `tbl_tamu`
 --
 
-INSERT INTO `tbl_tamu` (`cid`, `cnama`, `cemail`, `cpesan`, `alamat`, `dcreated_at`) VALUES
-(1, 'Aditya Ihsani Wijaya', 'adityaihsaniwijaya@gmail.com', 'semangat', '', '2025-12-16 21:37:23'),
-(2, 'abcdit', 'Adit@gmail.com', 'semangat terus ya', '', '2025-12-16 21:37:23'),
-(3, 'abcdit', 'Adit@gmail.com', 'nejbxdjewbd', '', '2025-12-16 21:37:23'),
-(4, 'fffffff', 'ggffg@dssss.com', 'iyadeh', '', '2025-12-16 21:37:23'),
-(5, 'abcdit', 'Adit@gmail.com', 'aaaaaaaaaa', '', '2025-12-16 21:37:23'),
-(6, 'abcdit', 'Adit@gmail.com', 'wwwwwwwwwww', '', '2025-12-16 21:37:23'),
-(7, 'hhhhhhhhh', 'uep@gmail.com', 'qqqqqqqqqq', '', '2025-12-16 21:37:23'),
-(8, 'abcdit', 'adityaihsaniwijaya@gmail.com', 'wwwwwwwwwwww', '', '2025-12-16 21:37:23');
+INSERT INTO `tbl_tamu` (`cid`, `cnama`, `cemail`, `cpesan`, `dcreated_at`) VALUES
+(1, 'Aditya Ihsani Wijaya', 'adityaihsaniwijaya@gmail.com', 'semangat', '2025-12-16 21:37:23'),
+(2, 'abcdit', 'Adit@gmail.com', 'semangat terus ya', '2025-12-16 21:37:23'),
+(3, 'abcdit', 'Adit@gmail.com', 'nejbxdjewbd', '2025-12-16 21:37:23'),
+(4, 'fffffff', 'ggffg@dssss.com', 'iyadeh', '2025-12-16 21:37:23'),
+(5, 'abcdit', 'Adit@gmail.com', 'aaaaaaaaaa', '2025-12-16 21:37:23'),
+(6, 'abcdit', 'Adit@gmail.com', 'wwwwwwwwwww', '2025-12-16 21:37:23'),
+(7, 'hhhhhhhhh', 'uep@gmail.com', 'qqqqqqqqqq', '2025-12-16 21:37:23'),
+(8, 'abcdit', 'adityaihsaniwijaya@gmail.com', 'wwwwwwwwwwww', '2025-12-16 21:37:23'),
+(9, 'Adit', 'shdhhdj@gmail.com', 'yrtyjytjujkyukuk', '2025-12-16 22:00:40'),
+(10, 'Adit', 'shdhhdj@gmail.com', 'rgtthhhtrthty', '2025-12-16 22:03:13'),
+(11, 'Adit', 'shdhhdj@gmail.com', 'iiiiiiiiiiii', '2025-12-16 22:03:51'),
+(12, 'Adit', 'shdhhdj@gmail.com', 'bhfghyhhjjjj', '2025-12-16 22:07:41'),
+(13, 'Adit', 'shdhhdj@gmail.com', 'afsdgnjgnrg', '2025-12-16 22:23:33'),
+(14, 'Adit', 'shdhhdj@gmail.com', 'yyuhyuhuhgtygy', '2025-12-16 22:24:45');
 
 --
 -- Indexes for dumped tables
@@ -68,7 +73,7 @@ ALTER TABLE `tbl_tamu`
 -- AUTO_INCREMENT for table `tbl_tamu`
 --
 ALTER TABLE `tbl_tamu`
-  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

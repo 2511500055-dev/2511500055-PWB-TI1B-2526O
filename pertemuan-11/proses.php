@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
     redirect_ke('index.php?contact');
 }
-
+$alamat  = bersihkan($_POST['txtal'] ?? '');
 $nama  = bersihkan($_POST['txtNama'] ?? '');
 $email = bersihkan($_POST['txtEmail'] ?? '');
 $pesan = bersihkan($_POST['txtPesan'] ?? '');
@@ -16,12 +16,9 @@ $errors = []; // Ini array untuk menampung semua error yang ada
 
 if ($nama === '') {
     $errors[] = 'Nama wajib diisi.';
-} 
-// >>> TAMBAHAN: VALIDASI PANJANG MINIMAL NAMA (3 KARAKTER) <<<
-elseif (strlen($nama) < 3) {
-    $errors[] = 'Nama minimal harus 3 karakter.';
+} elseif (mb_strlen($nama) < 3) {
+    $errors[] = 'Nama minimal 3 karakter.';
 }
-// >>> AKHIR TAMBAHAN NAMA <<<
 
 if ($email === '') {
     $errors[] = 'Email wajib diisi.';
@@ -31,13 +28,9 @@ if ($email === '') {
 
 if ($pesan === '') {
     $errors[] = 'Pesan wajib diisi.';
+} elseif (mb_strlen($pesan) < 10) {
+    $errors[] = 'Pesan minimal 10 karakter.';
 }
-// >>> TAMBAHAN: VALIDASI PANJANG MINIMAL PESAN (10 KARAKTER) <<<
-elseif (strlen($pesan) < 10) {
-    $errors[] = 'Pesan minimal harus 10 karakter.';
-}
-// >>> AKHIR TAMBAHAN PESAN <<<
-
 
 /*
 kondisi di bawah ini hanya dikerjakan jika ada error,
@@ -86,14 +79,14 @@ if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesa
 mysqli_stmt_close($stmt);
 
 
-// Bagian kode di bawah ini tampak tidak relevan atau redundant, tapi dibiarkan utuh sesuai kode awal
+
 $arrContact = [
     "nama" => $_POST["txtNama"] ?? "",
     "email" => $_POST["txtEmail"] ?? "",
     "pesan" => $_POST["txtPesan"] ?? ""
 ];
 $_SESSION["contact"] = $arrContact;
-header("location: index.php#about"); // Perlu dicek, biasanya redirect hanya satu kali
+header("location: index.php#about");
 
 $arrBiodata = [
     "nim" => $_POST["txtNim"] ?? "",
@@ -109,4 +102,4 @@ $arrBiodata = [
 ];
 $_SESSION["biodata"] = $arrBiodata;
 
-header("location: index.php#about"); // Perlu dicek, biasanya redirect hanya satu kali
+header("location: index.php#about");

@@ -13,17 +13,17 @@ $no = 1;
         <th>Nama</th>
         <th>Email</th>
         <th>Pesan</th>
+        <th>Created At</th>
     </tr>
 
     <?php while ($row = mysqli_fetch_assoc($q)): ?>
     <tr>
         <td><?= $no; ?></td> 
-        
         <td><?= $row['cid']; ?></td> 
-        
         <td><?= htmlspecialchars($row['cnama']); ?></td>
         <td><?= htmlspecialchars($row['cemail']); ?></td>
         <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
+        <td><?= date("d M Y H:i:s", strtotime($row['dcreated_at'])); ?></td>
     </tr>
     <?php 
     $no++;

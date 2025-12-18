@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'koneksi.php';
 
 $sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
@@ -19,6 +20,7 @@ $no = 1;
     <?php while ($row = mysqli_fetch_assoc($q)): ?>
     <tr>
         <td><?= $no; ?></td> 
+        <td><a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a></td>
         <td><?= $row['cid']; ?></td> 
         <td><?= htmlspecialchars($row['cnama']); ?></td>
         <td><?= htmlspecialchars($row['cemail']); ?></td>

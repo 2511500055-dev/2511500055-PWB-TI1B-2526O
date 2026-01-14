@@ -6,3 +6,4 @@
 <li>menambahkan validasi di proses.php</li>
 <li>menambahkan sanitasi di proses.php</li>
 <li>menambahkan PRG di proses.php</li>
+<li>menambahkan file baru bernama aditya_read.php</li>

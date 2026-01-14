@@ -11,3 +11,4 @@
 <li>menambahkan file bary bernama aditya_update.php</li>
 <li>menambahkan validasi di aditya_update.php</li>
 <li>menambahkan sanitasi di aditya_update.php</li>
+<li>menambahkan PRG di aditya_update.php</li>

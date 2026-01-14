@@ -12,3 +12,4 @@
 <li>menambahkan validasi di aditya_update.php</li>
 <li>menambahkan sanitasi di aditya_update.php</li>
 <li>menambahkan PRG di aditya_update.php</li>
+<li>menambahkan method POST di aditya_update.php</li>

@@ -10,3 +10,4 @@
 <li>menambahkan hasl record pada aditya_read.php beserta link edit dan delete</li>
 <li>menambahkan file bary bernama aditya_update.php</li>
 <li>menambahkan validasi di aditya_update.php</li>
+<li>menambahkan sanitasi di aditya_update.php</li>

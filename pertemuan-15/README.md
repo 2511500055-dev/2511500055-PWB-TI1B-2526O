@@ -4,3 +4,4 @@
 <li>membuat tabel baru nama tbl_aditya</li>
 <li>menambahkan method post di proses.php</li>
 <li>menambahkan validasi di proses.php</li>
+<li>menambahkan sanitasi di proses.php</li>

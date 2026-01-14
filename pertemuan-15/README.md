@@ -7,3 +7,4 @@
 <li>menambahkan sanitasi di proses.php</li>
 <li>menambahkan PRG di proses.php</li>
 <li>menambahkan file baru bernama aditya_read.php</li>
+<li>menambahkan hasl record pada aditya_read.php beserta link edit dan delete</li>

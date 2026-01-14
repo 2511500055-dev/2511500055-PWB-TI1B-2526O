@@ -15,3 +15,4 @@
 <li>menambahkan method POST di aditya_update.php</li>
 <li>menambahkan file baru bernama aditya_delete.php</li>
 <li>menambahkan konfirmasi penghapusan pada file aditya_delete.php</li>
+<li>menambahkan status sukses atau gagal pada file aditya_delete.php</li>

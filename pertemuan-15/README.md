@@ -8,8 +8,9 @@
 <li>menambahkan PRG di proses.php</li>
 <li>menambahkan file baru bernama aditya_read.php</li>
 <li>menambahkan hasl record pada aditya_read.php beserta link edit dan delete</li>
-<li>menambahkan file bary bernama aditya_update.php</li>
+<li>menambahkan file baru bernama aditya_update.php</li>
 <li>menambahkan validasi di aditya_update.php</li>
 <li>menambahkan sanitasi di aditya_update.php</li>
 <li>menambahkan PRG di aditya_update.php</li>
 <li>menambahkan method POST di aditya_update.php</li>
+<li>menambahkan file baru bernama aditya_delete.php</li>

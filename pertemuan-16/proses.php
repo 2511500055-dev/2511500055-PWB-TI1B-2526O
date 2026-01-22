@@ -93,18 +93,59 @@ if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesa
 #tutup statement
 mysqli_stmt_close($stmt);
 
-$arrBiodata = [
-  "kodepen" => $_POST["txtKodePen"] ?? "",
-  "nama" => $_POST["txtNmPengunjung"] ?? "",
-  "alamat" => $_POST["txtAlRmh"] ?? "",
-  "tanggal" => $_POST["txtTglKunjungan"] ?? "",
-  "hobi" => $_POST["txtHobi"] ?? "",
-  "slta" => $_POST["txtAsalSMA"] ?? "",
-  "pekerjaan" => $_POST["txtKerja"] ?? "",
-  "ortu" => $_POST["txtNmOrtu"] ?? "",
-  "pacar" => $_POST["txtNmPacar"] ?? "",
-  "mantan" => $_POST["txtNmMantan"] ?? ""
-];
-$_SESSION["biodata"] = $arrBiodata;
+/* =====================================================
+   TAMBAHAN PROSES BIODATA PENGUNJUNG (TANPA UBAH KODE DI ATAS)
+   ===================================================== */
 
+$kodepen = bersihkan($_POST["txtKodePen"] ?? "");
+$nm_pengunjung = bersihkan($_POST["txtNmPengunjung"] ?? "");
+$alamat = bersihkan($_POST["txtAlRmh"] ?? "");
+$tgl = bersihkan($_POST["txtTglKunjungan"] ?? "");
+$hobi = bersihkan($_POST["txtHobi"] ?? "");
+$slta = bersihkan($_POST["txtAsalSMA"] ?? "");
+$kerja = bersihkan($_POST["txtKerja"] ?? "");
+$ortu = bersihkan($_POST["txtNmOrtu"] ?? "");
+$pacar = bersihkan($_POST["txtNmPacar"] ?? "");
+$mantan = bersihkan($_POST["txtNmMantan"] ?? "");
+
+$error_bio = [];
+
+if ($kodepen == "") $error_bio[] = "Kode pengunjung wajib diisi.";
+if ($nm_pengunjung == "") $error_bio[] = "Nama pengunjung wajib diisi.";
+if ($alamat == "") $error_bio[] = "Alamat wajib diisi.";
+if ($tgl == "") $error_bio[] = "Tanggal kunjungan wajib diisi.";
+
+if (!empty($error_bio)) {
+  $_SESSION["old_bio"] = $_POST;
+  $_SESSION["flash_error"] = implode("<br>", $error_bio);
+  header("location: index.php#about");
+  exit;
+}
+
+$sql_bio = "INSERT INTO biodata_pengunjung
+(kodepen, nama, alamat, tanggal, hobi, slta, pekerjaan, ortu, pacar, mantan)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+$stmt_bio = mysqli_prepare($conn, $sql_bio);
+
+mysqli_stmt_bind_param(
+  $stmt_bio,
+  "ssssssssss",
+  $kodepen,
+  $nm_pengunjung,
+  $alamat,
+  $tgl,
+  $hobi,
+  $slta,
+  $kerja,
+  $ortu,
+  $pacar,
+  $mantan
+);
+
+mysqli_stmt_execute($stmt_bio);
+mysqli_stmt_close($stmt_bio);
+
+$_SESSION["flash_sukses"] = "Biodata pengunjung berhasil disimpan.";
 header("location: index.php#about");
+exit;

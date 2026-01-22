@@ -93,9 +93,7 @@ if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesa
 #tutup statement
 mysqli_stmt_close($stmt);
 
-/* =====================================================
-   TAMBAHAN PROSES BIODATA PENGUNJUNG (TANPA UBAH KODE DI ATAS)
-   ===================================================== */
+
 
 $kodepen = bersihkan($_POST["txtKodePen"] ?? "");
 $nm_pengunjung = bersihkan($_POST["txtNmPengunjung"] ?? "");

@@ -24,16 +24,10 @@ if (!$data) {
 <h2>Edit Biodata</h2>
 
 <form method="POST" action="proses_edit_biodata_adit.php">
+
+  <!-- KODE ASLI KAMU (TIDAK DIUBAH) -->
   <input type="hidden" name="id" value="<?= $data['id'] ?>">
 
-  Nama:<br>
-  <input type="text" name="nama" value="<?= htmlspecialchars($data['nama']) ?>"><br><br>
-
-  Alamat:<br>
-  <textarea name="alamat"><?= htmlspecialchars($data['alamat']) ?></textarea><br><br>
-
-  Tanggal:<br>
-  <input type="date" name="tanggal" value="<?= $data['tanggal'] ?>"><br><br>
-
-  <button type="submit">Update</button>
-</form>
+  <!-- TAMBAHAN BARU: tampilkan primary key readonly -->
+  ID (readonly):<br>
+  <input
